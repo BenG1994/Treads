@@ -21,5 +21,11 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Treads needs your location to track your run</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Treads needs your location to track your run</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Treads needs your location to track your run</string>
 </dict>
 </plist>

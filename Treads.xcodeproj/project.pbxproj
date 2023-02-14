@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EDEC0AF299BF84E00A6984E /* RunLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC0AE299BF84E00A6984E /* RunLogViewController.swift */; };
+		2EDEC0B1299BFDD100A6984E /* CurrentRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC0B0299BFDD100A6984E /* CurrentRunViewController.swift */; };
+		2EDEC0B3299C1FB800A6984E /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC0B2299C1FB800A6984E /* LocationViewController.swift */; };
 		2EF31916299BEEF20064615E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF31915299BEEF20064615E /* AppDelegate.swift */; };
 		2EF31918299BEEF20064615E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF31917299BEEF20064615E /* SceneDelegate.swift */; };
-		2EF3191A299BEEF20064615E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF31919299BEEF20064615E /* ViewController.swift */; };
+		2EF3191A299BEEF20064615E /* BeginRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF31919299BEEF20064615E /* BeginRunViewController.swift */; };
 		2EF3191D299BEEF20064615E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF3191B299BEEF20064615E /* Main.storyboard */; };
 		2EF3191F299BEEF40064615E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EF3191E299BEEF40064615E /* Assets.xcassets */; };
 		2EF31922299BEEF40064615E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF31920299BEEF40064615E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EDEC0AE299BF84E00A6984E /* RunLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogViewController.swift; sourceTree = "<group>"; };
+		2EDEC0B0299BFDD100A6984E /* CurrentRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunViewController.swift; sourceTree = "<group>"; };
+		2EDEC0B2299C1FB800A6984E /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		2EF31912299BEEF20064615E /* Treads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF31915299BEEF20064615E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EF31917299BEEF20064615E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2EF31919299BEEF20064615E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2EF31919299BEEF20064615E /* BeginRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginRunViewController.swift; sourceTree = "<group>"; };
 		2EF3191C299BEEF20064615E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EF3191E299BEEF40064615E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EF31921299BEEF40064615E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EDEC0A8299BF37B00A6984E /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		2EDEC0A9299BF38100A6984E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2EDEC0AA299BF38800A6984E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2EDEC0AB299BF39400A6984E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EF31919299BEEF20064615E /* BeginRunViewController.swift */,
+				2EDEC0AE299BF84E00A6984E /* RunLogViewController.swift */,
+				2EDEC0B0299BFDD100A6984E /* CurrentRunViewController.swift */,
+				2EDEC0B2299C1FB800A6984E /* LocationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2EDEC0AC299BF39B00A6984E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2EDEC0AD299BF3A500A6984E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2EF31909299BEEF20064615E = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +108,14 @@
 		2EF31914299BEEF20064615E /* Treads */ = {
 			isa = PBXGroup;
 			children = (
+				2EDEC0AD299BF3A500A6984E /* Models */,
+				2EDEC0AC299BF39B00A6984E /* Views */,
+				2EDEC0AB299BF39400A6984E /* Controllers */,
+				2EDEC0AA299BF38800A6984E /* Utilities */,
+				2EDEC0A9299BF38100A6984E /* Extensions */,
+				2EDEC0A8299BF37B00A6984E /* Ressources */,
 				2EF31915299BEEF20064615E /* AppDelegate.swift */,
 				2EF31917299BEEF20064615E /* SceneDelegate.swift */,
-				2EF31919299BEEF20064615E /* ViewController.swift */,
 				2EF3191B299BEEF20064615E /* Main.storyboard */,
 				2EF3191E299BEEF40064615E /* Assets.xcassets */,
 				2EF31920299BEEF40064615E /* LaunchScreen.storyboard */,
@@ -138,9 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EF3191A299BEEF20064615E /* ViewController.swift in Sources */,
+				2EF3191A299BEEF20064615E /* BeginRunViewController.swift in Sources */,
+				2EDEC0B1299BFDD100A6984E /* CurrentRunViewController.swift in Sources */,
 				2EF31916299BEEF20064615E /* AppDelegate.swift in Sources */,
+				2EDEC0B3299C1FB800A6984E /* LocationViewController.swift in Sources */,
 				2EF31918299BEEF20064615E /* SceneDelegate.swift in Sources */,
+				2EDEC0AF299BF84E00A6984E /* RunLogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
