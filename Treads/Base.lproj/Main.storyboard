@@ -245,25 +245,25 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VNV-m2-Pcu">
-                                <rect key="frame" x="160" y="430.33333333333331" width="73" height="62.666666666666686"/>
+                                <rect key="frame" x="155" y="430.33333333333331" width="83.333333333333314" height="62.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwU-TG-FgS">
-                                        <rect key="frame" x="0.0" y="0.0" width="73" height="25"/>
+                                        <rect key="frame" x="5" y="0.0" width="73" height="25"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="OzX-Lu-809">
-                                        <rect key="frame" x="3.3333333333333428" y="29.999999999999996" width="66.333333333333329" height="32.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="29.999999999999996" width="83.333333333333329" height="32.666666666666657"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6M1-QO-V5s">
-                                                <rect key="frame" x="0.0" y="0.0" width="42.666666666666664" height="32.666666666666664"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6M1-QO-V5s">
+                                                <rect key="frame" x="0.0" y="0.0" width="59.666666666666664" height="32.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWF-BV-aai">
-                                                <rect key="frame" x="46.666666666666657" y="10.333333333333373" width="19.666666666666671" height="19.666666666666671"/>
+                                                <rect key="frame" x="63.66666666666665" y="10.333333333333373" width="19.666666666666664" height="19.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -276,9 +276,17 @@
                                 <rect key="frame" x="55.666666666666657" y="693" width="231.99999999999997" height="75"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9v-Mz-gPI">
-                                <rect key="frame" x="252" y="686" width="99" height="89"/>
+                                <rect key="frame" x="252" y="681" width="99" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="HI4-6w-yyC"/>
+                                    <constraint firstAttribute="width" secondItem="k9v-Mz-gPI" secondAttribute="height" multiplier="1:1" id="HSl-jj-GGb"/>
+                                    <constraint firstAttribute="height" constant="99" id="co5-Li-74E"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="pauseButton"/>
+                                <connections>
+                                    <action selector="pauseButtonPressed:" destination="Re0-NU-ltB" eventType="touchUpInside" id="LoG-yA-wyJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="END RUN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygP-vv-Lxm">
                                 <rect key="frame" x="154.66666666666666" y="720" width="74" height="21"/>
@@ -294,10 +302,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ygP-vv-Lxm" firstAttribute="centerY" secondItem="ddG-4t-9pC" secondAttribute="centerY" id="1Ii-Ko-aaP"/>
+                            <constraint firstItem="k9v-Mz-gPI" firstAttribute="leading" secondItem="ygP-vv-Lxm" secondAttribute="trailing" constant="23.333333333333343" id="2zN-zF-CeT"/>
                             <constraint firstItem="Raa-Rv-ToB" firstAttribute="top" secondItem="vur-36-ppP" secondAttribute="top" constant="18" id="3Jx-zy-Ukh"/>
                             <constraint firstItem="ddG-4t-9pC" firstAttribute="leading" secondItem="0zR-q8-HO3" secondAttribute="trailing" constant="-64.333335876464844" id="73h-XB-mFd"/>
                             <constraint firstItem="jml-y7-g5S" firstAttribute="top" secondItem="vBv-Cy-yZ7" secondAttribute="bottom" constant="40" id="96a-KM-M7M"/>
-                            <constraint firstItem="k9v-Mz-gPI" firstAttribute="leading" secondItem="ddG-4t-9pC" secondAttribute="trailing" constant="-35.666666666666629" id="96h-NZ-mha"/>
                             <constraint firstItem="ddG-4t-9pC" firstAttribute="top" secondItem="VNV-m2-Pcu" secondAttribute="bottom" constant="200" id="9Co-8j-h4Q"/>
                             <constraint firstItem="ddG-4t-9pC" firstAttribute="centerX" secondItem="sDH-SV-R5B" secondAttribute="centerX" constant="-25" id="D1l-4Y-OAq"/>
                             <constraint firstItem="k9v-Mz-gPI" firstAttribute="centerY" secondItem="ddG-4t-9pC" secondAttribute="centerY" id="EGj-XW-Min"/>
@@ -322,6 +330,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="OHH-t2-nJl"/>
                     <connections>
+                        <outlet property="distanceLabel" destination="6M1-QO-V5s" id="Tgy-o2-wdG"/>
+                        <outlet property="durationLabel" destination="vBv-Cy-yZ7" id="dZ8-Qq-xni"/>
+                        <outlet property="paceLabel" destination="rpR-li-der" id="Tj1-aD-MIJ"/>
+                        <outlet property="pauseButton" destination="k9v-Mz-gPI" id="a86-Ku-4QD"/>
                         <outlet property="sliderBackgroundImageView" destination="ddG-4t-9pC" id="cEv-5x-D8j"/>
                         <outlet property="sliderImageView" destination="0zR-q8-HO3" id="8Ec-w8-WsS"/>
                     </connections>

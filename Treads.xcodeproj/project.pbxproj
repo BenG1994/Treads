@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EAAD4D4299C58CD00BF0394 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAAD4D3299C58CD00BF0394 /* Extensions.swift */; };
 		2EDEC0AF299BF84E00A6984E /* RunLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC0AE299BF84E00A6984E /* RunLogViewController.swift */; };
 		2EDEC0B1299BFDD100A6984E /* CurrentRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC0B0299BFDD100A6984E /* CurrentRunViewController.swift */; };
 		2EDEC0B3299C1FB800A6984E /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC0B2299C1FB800A6984E /* LocationViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EAAD4D3299C58CD00BF0394 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2EDEC0AE299BF84E00A6984E /* RunLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogViewController.swift; sourceTree = "<group>"; };
 		2EDEC0B0299BFDD100A6984E /* CurrentRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunViewController.swift; sourceTree = "<group>"; };
 		2EDEC0B2299C1FB800A6984E /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
@@ -43,16 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2EDEC0A8299BF37B00A6984E /* Ressources */ = {
+		2EDEC0A8299BF37B00A6984E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Ressources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		2EDEC0A9299BF38100A6984E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2EAAD4D3299C58CD00BF0394 /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -113,7 +116,7 @@
 				2EDEC0AB299BF39400A6984E /* Controllers */,
 				2EDEC0AA299BF38800A6984E /* Utilities */,
 				2EDEC0A9299BF38100A6984E /* Extensions */,
-				2EDEC0A8299BF37B00A6984E /* Ressources */,
+				2EDEC0A8299BF37B00A6984E /* Resources */,
 				2EF31915299BEEF20064615E /* AppDelegate.swift */,
 				2EF31917299BEEF20064615E /* SceneDelegate.swift */,
 				2EF3191B299BEEF20064615E /* Main.storyboard */,
@@ -201,6 +204,7 @@
 				2EDEC0B3299C1FB800A6984E /* LocationViewController.swift in Sources */,
 				2EF31918299BEEF20064615E /* SceneDelegate.swift in Sources */,
 				2EDEC0AF299BF84E00A6984E /* RunLogViewController.swift in Sources */,
+				2EAAD4D4299C58CD00BF0394 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,6 @@ class BeginRunViewController: LocationViewController {
         
         checkLocationAuthStatus()
         mapView.delegate = self
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,9 +31,6 @@ class BeginRunViewController: LocationViewController {
     @IBAction func locationPressed(_ sender: Any) {
         mapView.setCenter(mapView.userLocation.coordinate, animated: true)
     }
-    
-    
-    
 }
 
 
@@ -47,6 +43,5 @@ extension BeginRunViewController: CLLocationManagerDelegate {
             mapView.userTrackingMode = .follow
         }
     }
-    
 }
 
