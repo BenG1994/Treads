@@ -33,7 +33,7 @@ class RunModel: Object {
     
     static func addRunToRealm(pace: Int, distance: Double, duration: Int, locations: List<Location>) {
         REALM_QUEUE.sync {
-            let run = RunModel(pace: pace, distance: distance, duration: duration, locations: List<Location>())
+            let run = RunModel(pace: pace, distance: distance, duration: duration, locations: locations)
             do {
                 let realm = try Realm(configuration: RealmConfiguration.runDataConfig)
                 try realm.write {
