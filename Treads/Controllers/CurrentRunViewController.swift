@@ -22,6 +22,8 @@ class CurrentRunViewController: LocationViewController {
     
     var startLocation: CLLocation!
     var lastLocation: CLLocation!
+    var coordinateLocations = List<Location>()
+    
     var runDistance = 0.0
     var counter = 0
     var timer = Timer()
@@ -52,7 +54,7 @@ class CurrentRunViewController: LocationViewController {
     func endRun() {
         manager?.stopUpdatingLocation()
 //        add object to realm
-        RunModel.addRunToRealm(pace: pace, distance: runDistance, duration: counter)
+        RunModel.addRunToRealm(pace: pace, distance: runDistance, duration: counter, locations: coordinateLocations)
         
     }
     
@@ -127,6 +129,8 @@ extension CurrentRunViewController: CLLocationManagerDelegate {
             startLocation = locations.first
         }else if let location = locations.last {
             runDistance += lastLocation.distance(from: location)
+            let newLocation = Location(latitude: Double(lastLocation.coordinate.latitude), longitude: Double(lastLocation.coordinate.longitude))
+            coordinateLocations.insert(newLocation, at: 0)
             distanceLabel.text = String(format: "%.2f", (runDistance / 1000))
             if counter > 0 && runDistance > 0 {
                 paceLabel.text = calculatePace(time: counter, km: runDistance.metersToKilometers(places: 2))

@@ -24,10 +24,6 @@ class RunLogViewController: UIViewController {
 }
 
 extension RunLogViewController: UITableViewDelegate, UITableViewDataSource {
-   
-//    func numberOfSections(in tableView: UITableView) -> Int {
-  //        <#code#>
-  //    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return RunModel.getAllRuns()?.count ?? 0

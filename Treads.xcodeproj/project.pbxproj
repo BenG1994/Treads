@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E15E4FA299F0DED00BA7C7E /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15E4F9299F0DED00BA7C7E /* LocationModel.swift */; };
+		2E15E4FC299F113600BA7C7E /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15E4FB299F113600BA7C7E /* RealmConfiguration.swift */; };
 		2E305C50299DAB7D0040BF54 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2E305C4F299DAB7D0040BF54 /* Realm */; };
 		2E305C52299DAB7D0040BF54 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2E305C51299DAB7D0040BF54 /* RealmSwift */; };
 		2E305C54299DAC680040BF54 /* RunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E305C53299DAC680040BF54 /* RunModel.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E15E4F9299F0DED00BA7C7E /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		2E15E4FB299F113600BA7C7E /* RealmConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfiguration.swift; sourceTree = "<group>"; };
 		2E305C53299DAC680040BF54 /* RunModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunModel.swift; sourceTree = "<group>"; };
 		2E305C55299DB1B90040BF54 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2EAAD4D3299C58CD00BF0394 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				2E305C55299DB1B90040BF54 /* Constants.swift */,
+				2E15E4FB299F113600BA7C7E /* RealmConfiguration.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				2E305C53299DAC680040BF54 /* RunModel.swift */,
+				2E15E4F9299F0DED00BA7C7E /* LocationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,7 +228,9 @@
 				2EDEC0B1299BFDD100A6984E /* CurrentRunViewController.swift in Sources */,
 				2EF31916299BEEF20064615E /* AppDelegate.swift in Sources */,
 				2EDEC0B3299C1FB800A6984E /* LocationViewController.swift in Sources */,
+				2E15E4FC299F113600BA7C7E /* RealmConfiguration.swift in Sources */,
 				2ED08011299EFC9E006CAD6C /* RunLogCell.swift in Sources */,
+				2E15E4FA299F0DED00BA7C7E /* LocationModel.swift in Sources */,
 				2EF31918299BEEF20064615E /* SceneDelegate.swift in Sources */,
 				2EDEC0AF299BF84E00A6984E /* RunLogViewController.swift in Sources */,
 				2EAAD4D4299C58CD00BF0394 /* Extensions.swift in Sources */,
