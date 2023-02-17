@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 import MapKit
 
 class CurrentRunViewController: LocationViewController {
@@ -51,6 +52,8 @@ class CurrentRunViewController: LocationViewController {
     func endRun() {
         manager?.stopUpdatingLocation()
 //        add object to realm
+        RunModel.addRunToRealm(pace: pace, distance: runDistance, duration: counter)
+        
     }
     
     func pauseRun() {
