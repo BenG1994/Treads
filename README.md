@@ -28,7 +28,7 @@ Once a run is finished, displayed the last run on the MapView along with the dat
 
 ![Simulator Screen Recording - iPhone 14 Pro - 2023-02-18 at 21 16 31](https://user-images.githubusercontent.com/113778995/219914016-d4c56165-ef60-48a4-95cb-37f6c14ec8c9.gif)
 
-To save users data, I used Realm for this app. Creating a Realm database is simple and straightforward. Thankfully, all the data needed to be saved with Treads were compatible with Realm; in this case it was pace (int), distance (double), duration (int), date (NSDate), and location (CLLocations, which are doubles). However, locations were added after the Realm database was created, so I added a Realm configuration to add that data in without having to reset the database.
+To save user data, I used Realm for this app. Creating a Realm database is simple and straightforward. Thankfully, all the data needed to be saved with Treads were compatible with Realm; in this case it was pace (int), distance (double), duration (int), date (NSDate), and location (CLLocations, which are doubles). However, locations were added after the Realm database was created, so I added a Realm configuration to add that data in without having to reset the database.
 
 And if you close the final run tab that appears after your last run or when you launch the app, it'll center on your current location instead of around the run path.
 
